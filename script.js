@@ -38,9 +38,9 @@ function shareTo(platform){
 
 
   const links = {
-    instagram:`=${url}`,
-    facebook: `=${url}`,
-    twitter:  `=${url}&text=${title}`,
+    instagram:`https://www.instagram.com/reogsingomanggolo_?stkn=aWphMTB5Mnl3cTFi=${url}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+    twitter:  `https://x.com/cahayabudaya_tat=${title}&url=${url}`,
     whatsapp: `https://wa.me/?text=${title}%20${url}`
   };
   if (links[platform]){
