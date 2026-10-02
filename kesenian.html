@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kesenian Reog: Perpaduan Tari, Musik, dan Olah Kanuragan</title>
+    <meta name="description" content="Mengenal unsur seni dalam pertunjukan Reog Ponorogo: tokoh-tokoh tari seperti Jathil, Warok, dan Bujang Ganong, serta iringan gamelan khas reog.">
+
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="img/logoreog.png" alt="Logo Budaya Nusantara" width="34" height="34">
+      <span class="brand-name">Budaya Nusantara</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navigasi utama">
+      <a href="main.html">Beranda</a>
+      <a href="kesenian.html" class="is-active" aria-current="page">Kesenian</a>
+      <a href="tradisi.html">Tradisi</a>
+      <a href="pariwisata.html">Pariwisata</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Buka pencarian" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-panel" id="searchPanel">
+    <form onsubmit="return false;">
+      <input type="text" placeholder="Cari artikel budaya…" aria-label="Cari artikel">
+      <button type="submit">Cari</button>
+    </form>
+  </div>
+</header>
+
+<nav class="nav-mobile" id="navMobile" aria-label="Navigasi mobile">
+  <a href="index.html">Beranda</a>
+  <a href="kesenian.html" class="is-active" aria-current="page">Kesenian</a>
+  <a href="tradisi.html">Tradisi</a>
+  <a href="pariwisata.html">Pariwisata</a>
+</nav>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <div class="hero-media">
+      <img src="img/kesenian.jpg" alt="Pertunjukan tari dalam kesenian Reog Ponorogo">
+      <span class="hero-credit">Foto: Placeholder</span>
+    </div>
+  </section>
+
+  <div class="wrap" style="padding:0;">
+    <div class="article-card">
+      <span class="category-badge">Kesenian</span>
+      <h1 class="article-title">Kesenian Reog: Perpaduan Tari, Musik, dan Olah Kanuragan</h1>
+      <p class="article-excerpt">Di balik dadak merak yang megah, sebuah pertunjukan reog sebenarnya tersusun dari beberapa babak tari dengan tokoh dan karakter yang berbeda-beda, diiringi tabuhan gamelan yang khas.</p>
+      <div class="article-meta">
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+          28 September 2026
+        </span>
+        <div class="share-row" aria-label="Bagikan artikel">
+          <button aria-label="Bagikan ke Instagram" onclick="shareTo('instagram')">
+            <img src="img/icons/instagram.png" alt="instagram" width="20" height="20" class="icon-share">
+          </button>
+          <button aria-label="Bagikan ke X" onclick="shareTo('twitter')">
+            <img src="img/icons/twitter.png" alt="x" width="24" height="24" class="icon-share">
+          </button>
+          <button aria-label="Salin tautan" onclick="copyLink()">
+            <img src="img/icons/link.png" alt="Salin tautan" width="24" height="24" class="icon-share">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap content-grid">
+    <article>
+
+      <div class="gallery" id="gallery">
+        <figure>
+          <img src="img/jathil.webp" alt="Penari Jathil" onclick="openLightbox(this.src)">
+          <figcaption>Jathil, penari yang membawakan gerak pasukan berkuda.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/warook.jpg" alt="Sosok Warok" onclick="openLightbox(this.src)">
+          <figcaption>Warok, tokoh sepuh yang membuka jalannya pertunjukan.</figcaption>
+        </figure>
+        <figure>
+          <img src="img/bujang_ganonng.jpg" alt="Bujang Ganong" onclick="openLightbox(this.src)">
+          <figcaption>Bujang Ganong, patih humoris dengan gerak akrobatik.</figcaption>
+        </figure>
+        <figure> 
+          <img src="img/klono.jpg" alt="Klono Sewandono" onclick="openLightbox(this.src)">
+          <figcaption>Klono Sewandono, sosok raja yang gagah dalam kisah reog.</figcaption>
+        </figure>
+      </div>
+
+      <div class="article-body">
+        <p>Sebuah pertunjukan reog jarang tampil sebagai satu adegan tunggal. Umumnya pertunjukan dibuka dengan tarian pembuka yang dibawakan dua atau tiga warok, dilanjutkan dengan kemunculan Bujang Ganong yang melakukan gerakan akrobatik dan lucu, lalu barisan Jathil yang menari lincah membawakan simbol pasukan berkuda.</p>
+
+        <blockquote class="pull-quote">Setiap tokoh punya karakter gerak sendiri, dan urutan kemunculannya membentuk satu kesatuan cerita.</blockquote>
+
+        <p>Klono Sewandono, sang raja dalam kisah reog, biasanya tampil membawa pecut (cambuk) sebagai simbol wibawa kepemimpinan. Barulah di penghujung pertunjukan, sosok Singo Barong dengan dadak merak yang berat tampil sebagai puncak acara, diarak berputar-putar mengikuti tempo tabuhan yang semakin cepat.</p>
+
+        <p>Musik pengiring reog punya warna suara yang cukup khas dibanding gamelan Jawa pada umumnya. Instrumen utamanya adalah kendang untuk mengatur tempo, terompet reog atau selompret yang melengking nyaring sebagai penanda perubahan gerak, ditambah kenong, kethuk, dan angklung bambu yang memberi lapisan bunyi bergemerincing.</p>
+
+        <blockquote class="pull-quote">Selompret adalah nyawa dari iringan reog — nadanya yang melengking memberi aba-aba bagi setiap perubahan gerak penari.</blockquote>
+
+        <p>Kombinasi gerak tari yang energik dengan musik yang dinamis inilah yang membuat kesenian reog terasa hidup dan penuh tenaga, sekaligus menuntut latihan fisik serta kekompakan yang tinggi dari setiap anggota kelompoknya.</p>
+      </div>
+
+      <div class="tag-list">
+        <a class="tag-pill" href="#">Tari</a>
+        <a class="tag-pill" href="#">Gamelan Reog</a>
+        <a class="tag-pill" href="#">Jathil</a>
+        <a class="tag-pill" href="#">Bujang Ganong</a>
+        <a class="tag-pill" href="index.html">Reog Ponorogo</a>
+      </div>
+    </article>
+
+  </div>
+
+
+  <section class="newsletter">
+    <div class="wrap newsletter-inner">
+      <h2>Berlangganan Kabar Budaya</h2>
+      <p>Dapatkan artikel seni, tradisi, dan kuliner Nusantara langsung ke email Anda.</p>
+      <form id="newsletterForm">
+        <input type="email" required placeholder="Alamat email Anda" aria-label="Alamat email">
+        <button type="submit">Daftar</button>
+      </form>
+      <p class="ok-msg" id="newsletterOk">Terima kasih! Anda berhasil berlangganan.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="brand-name" style="color:#fff;">Nusantara Budaya</span>
+      <p>Portal referensi seni, tradisi, dan kuliner Indonesia ditulis untuk menjaga cerita budaya tetap hidup.</p>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M14 4v9a3 3 0 1 1-3-3"/><path d="M14 4c0 2 2 4 4 4"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h5>Tentang</h5>
+      <ul>
+        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#">Hubungi Kami</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Nusantara Budaya.</span>
+    <a class="back-top" href="#top">
+      Kembali ke atas
+    </a>
+  </div>
+</footer>
+
+<div class="toast" id="toast">Tautan disalin!</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Tutup"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
