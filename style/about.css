@@ -1,0 +1,149 @@
+
+.about-hero{
+  background-color: #2f6f5e;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about-hero h1{
+  font-family: var(--font-serif);
+  font-size: 32px;
+  margin: 0 0 10px;
+}
+
+.about-hero p{
+  font-size: 16px;
+  color: #d9efe8;
+  margin: 0;
+}
+
+/*2. Pembungkus tiap bagian konten */
+.about-section{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.about-section h2{
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: #2f6f5e;
+  margin: 0 0 14px;
+}
+
+.about-section p{
+  color: #444444;
+  line-height: 1.7;
+}
+
+/*3. Visi & Misi */
+.vm-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.vm-card{
+  flex: 1;
+  min-width: 220px;
+  background-color: #f4faf8;
+  border: 1px solid #cdeae1;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.vm-card h3{
+  color: #2f6f5e;
+  margin: 0 0 8px;
+}
+
+.vm-card ul{
+  margin: 0;
+  padding-left: 18px;
+}
+
+.vm-card li{
+  margin-bottom: 6px;
+  color: #444444;
+}
+
+/* 4.Baris statistik */
+.stat-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 20px;
+}
+
+.stat-number{
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2f6f5e;
+}
+
+.stat-label{
+  font-size: 14px;
+  color: #666666;
+}
+
+/* 5.Kartu Tim */
+.team-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-card{
+  flex: 1;
+  min-width: 160px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.avatar{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #2f6f5e;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto 10px;
+}
+
+.team-card h4{
+  margin: 0 0 4px;
+  color: #222222;
+}
+
+.team-card p{
+  font-size: 13px;
+  color: #777777;
+}
+
+/* 6.Bagian kontak */
+.contact-section{
+  text-align: center;
+}
+
+.contact-info{
+  margin-top: 10px;
+  font-size: 14px;
+  color: #444444;
+}
+
+/* 7.Responsif untuk layar kecil */
+@media (max-width: 600px){
+  .vm-grid,
+  .team-grid{
+    flex-direction: column;
+  }
+}

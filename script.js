@@ -1,3 +1,14 @@
+/* =========================================================
+   script.js — logika bersama untuk seluruh halaman
+   (index.html, kesenian.html, tradisi.html, pariwisata.html)
+
+   File ini di-load lewat <script src="script.js"></script>
+   di setiap halaman, jadi semua fungsi di sini otomatis bisa
+   dipakai di halaman manapun selama markup-nya memakai
+   id/class yang sama (siteHeader, searchToggle, navToggle, dst).
+   ========================================================= */
+
+// 1) Bayangan header saat halaman discroll
 const header = document.getElementById('siteHeader');
 if (header){
   window.addEventListener('scroll', () => {
@@ -5,6 +16,7 @@ if (header){
   });
 }
 
+// 2) Toggle panel pencarian
 const searchToggle = document.getElementById('searchToggle');
 const searchPanel  = document.getElementById('searchPanel');
 if (searchToggle && searchPanel){
@@ -14,6 +26,7 @@ if (searchToggle && searchPanel){
   });
 }
 
+// 3) Toggle menu mobile
 const navToggle = document.getElementById('navToggle');
 const navMobile  = document.getElementById('navMobile');
 if (navToggle && navMobile){
@@ -23,6 +36,7 @@ if (navToggle && navMobile){
   });
 }
 
+// 4) Toast notifikasi kecil (dipakai oleh copyLink & shareTo)
 function showToast(message){
   const toast = document.getElementById('toast');
   if (!toast) return;
@@ -32,10 +46,20 @@ function showToast(message){
   showToast._t = setTimeout(() => toast.classList.remove('is-visible'), 2400);
 }
 
+// 5) Tombol bagikan
+//    - Twitter/X & WhatsApp punya URL share resmi, jadi dibuka di jendela baru.
+//    - Instagram TIDAK punya URL share untuk halaman web, jadi tautan
+//      disalin otomatis dan pengguna tinggal tempel di caption/bio/DM.
 function shareTo(platform){
   const url   = encodeURIComponent(window.location.href);
   const title = encodeURIComponent(document.title);
 
+  if (platform === 'instagram'){
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      showToast('Tautan disalin! Tempel di Instagram Anda.');
+    });
+    return;
+  }
 
   const links = {
     instagram:`https://www.instagram.com/reogsingomanggolo_?stkn=aWphMTB5Mnl3cTFi=${url}`,
@@ -48,12 +72,14 @@ function shareTo(platform){
   }
 }
 
+// 6) Salin tautan halaman
 function copyLink(){
   navigator.clipboard.writeText(window.location.href).then(() => {
     showToast('Tautan disalin!');
   });
 }
 
+// 7) Lightbox galeri foto (aktif otomatis kalau halaman punya .gallery)
 function openLightbox(src){
   const img = document.getElementById('lightboxImg');
   const box = document.getElementById('lightbox');
@@ -72,6 +98,9 @@ if (lightboxEl){
   });
 }
 
+// 8) Form newsletter — tanpa backend, cukup tampilkan pesan sukses.
+//    Ganti bagian ini dengan fetch() ke API/email service Anda kalau
+//    sudah siap terhubung ke layanan sungguhan.
 const newsletterForm = document.getElementById('newsletterForm');
 if (newsletterForm){
   newsletterForm.addEventListener('submit', function(e){
