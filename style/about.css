@@ -1,6 +1,6 @@
 
 .about-hero{
-  background-color: #2f6f5e;
+  background-color: #282b7e;
   color: #ffffff;
   text-align: center;
   padding: 60px 20px;
@@ -28,7 +28,7 @@
 .about-section h2{
   font-family: var(--font-serif);
   font-size: 22px;
-  color: #2f6f5e;
+  color: #000000;
   margin: 0 0 14px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .vm-card h3{
-  color: #2f6f5e;
+  color: #000000;
   margin: 0 0 8px;
 }
 
@@ -81,7 +81,7 @@
   display: block;
   font-size: 28px;
   font-weight: bold;
-  color: #2f6f5e;
+  color: #000000;
 }
 
 .stat-label{
