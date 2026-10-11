@@ -198,7 +198,11 @@ blockquote.pull-quote{
 }
 .tag-pill:hover{ border-color:var(--brass); color:var(--brick); }
 
-/* ---- 5b. GALERI (opsional, dipakai oleh kesenian.html) ---- */
+/* ---- 5b. GALERI FOTO ---- */
+.gallery-title{
+  font-family:var(--font-serif); font-size:1.45rem; color:var(--indigo);
+  margin:0 0 16px;
+}
 .gallery{
   display:flex; gap:14px; overflow-x:auto; padding-bottom:8px; margin:28px 0;
   scroll-snap-type:x mandatory;

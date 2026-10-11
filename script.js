@@ -6,7 +6,6 @@ if (header){
   });
 }
 
-// Membuka atau menutup panel pencarian dan memperbarui status aksesibilitas tombol.
 const searchToggle = document.getElementById('searchToggle');
 const searchPanel  = document.getElementById('searchPanel');
 if (searchToggle && searchPanel){
@@ -16,7 +15,6 @@ if (searchToggle && searchPanel){
   });
 }
 
-// Membuka atau menutup menu navigasi versi mobile.
 const navToggle = document.getElementById('navToggle');
 const navMobile  = document.getElementById('navMobile');
 if (navToggle && navMobile){
@@ -26,24 +24,21 @@ if (navToggle && navMobile){
   });
 }
 
-// Menampilkan pesan sementara, lalu menyembunyikannya setelah 2,4 detik.
 function showToast(message){
   const toast = document.getElementById('toast');
   if (!toast) return;
   toast.textContent = message;
   toast.classList.add('is-visible');
   clearTimeout(showToast._t);
-  showToast._t = setTimeout(() => toast.classList.remove('is-visible'), 2400);
+  showToast._t = setTimeout(() => toast.classList.remove('is-visible'), 2100);
 }
 
-// Membuat URL berbagi berdasarkan platform dan membuka halaman berbagi di tab baru.
 function shareTo(platform){
   const url   = encodeURIComponent(window.location.href);
   const title = encodeURIComponent(document.title);
 
   const links = {
     instagram:`https://www.instagram.com/reogsingomanggolo_?stkn=aWphMTB5Mnl3cTFi=${url}`,
-    facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,
     twitter:  `https://x.com/cahayabudaya_tat=${title}&url=${url}`,
     whatsapp: `https://wa.me/?text=${title}%20${url}`
   };
@@ -52,7 +47,6 @@ function shareTo(platform){
   }
 }
 
-// Menyalin alamat halaman saat ini, lalu memberi tahu pengguna melalui toast.
 function copyLink(){
   navigator.clipboard.writeText(window.location.href).then(() => {
     showToast('Tautan disalin!');
@@ -82,7 +76,6 @@ if (lightboxEl){
   });
 }
 
-// Mencegah formulir newsletter berpindah halaman, menampilkan pesan sukses, lalu mengosongkan formulir.
 const newsletterForm = document.getElementById('newsletterForm');
 if (newsletterForm){
   newsletterForm.addEventListener('submit', function(e){
