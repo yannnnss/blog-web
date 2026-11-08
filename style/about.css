@@ -18,7 +18,7 @@
   margin: 0;
 }
 
-/*2. Pembungkus tiap bagian konten */
+/* Pembungkus tiap bagian konten */
 .about-section{
   max-width: 800px;
   margin: 0 auto;
@@ -89,7 +89,7 @@
   color: #666666;
 }
 
-/* 5.Kartu Tim */
+/* Kartu Tim */
 .team-grid{
   display: flex;
   flex-wrap: wrap;

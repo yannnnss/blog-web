@@ -17,7 +17,7 @@
   --maxw: 1180px;
 }
 
-/* ---- 2. RESET DASAR ---- */
+/* RESET DASAR  */
 *,*::before,*::after{ box-sizing:border-box; }
 html{ scroll-behavior:smooth; }
 body{
@@ -34,7 +34,7 @@ button{ font-family:inherit; cursor:pointer; }
 .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 24px; }
 :focus-visible{ outline:3px solid var(--brass); outline-offset:2px; }
 
-/* ---- 3. HEADER / NAVIGASI ---- */
+/* HEADER/NAVIGASI  */
 .site-header{
   position:sticky; top:0; z-index:50;
   background:var(--bg);
@@ -114,7 +114,7 @@ button{ font-family:inherit; cursor:pointer; }
   .nav-mobile{ display:block; }
 }
 
-/* ---- 4. HERO + KARTU JUDUL ARTIKEL ---- */
+/*  hero+kartu judul artikel */
 .hero{ padding-top:28px; }
 .hero-media{
   border-radius:var(--radius); overflow:hidden; position:relative;
@@ -176,7 +176,7 @@ button{ font-family:inherit; cursor:pointer; }
   .share-row{ margin-left:0; width:100%; }
 }
 
-/* ---- 5. ISI ARTIKEL (kolom tunggal, tanpa sidebar) ---- */
+/* ISI ARTIKEL  */
 .content-grid{
   max-width:760px; margin:56px auto 72px; padding:0 24px;
 }
@@ -198,7 +198,7 @@ blockquote.pull-quote{
 }
 .tag-pill:hover{ border-color:var(--brass); color:var(--brick); }
 
-/* ---- 5b. GALERI FOTO ---- */
+/* GALERI FOTO */
 .gallery-title{
   font-family:var(--font-serif); font-size:1.45rem; color:var(--indigo);
   margin:0 0 16px;
@@ -213,7 +213,7 @@ blockquote.pull-quote{
 .gallery img{ width:220px; height:150px; object-fit:cover; border-radius:var(--radius); }
 .gallery figcaption{ font-size:.78rem; color:var(--ink-soft); margin-top:8px; }
 
-/* ---- 6. NEWSLETTER ---- */
+/* NEWSLETTER */
 .newsletter{ background:var(--indigo); color:#fff; padding:58px 0; }
 .newsletter-inner{ max-width:560px; margin:0 auto; text-align:center; padding:0 24px; }
 .newsletter h2{ font-family:var(--font-serif); font-size:1.7rem; margin:0 0 10px; }
@@ -231,7 +231,7 @@ blockquote.pull-quote{
 .newsletter .ok-msg{ display:none; color:var(--brass-lt); margin-top:14px; font-size:.9rem; }
 @media (max-width:520px){ .newsletter form{ flex-direction:column; } }
 
-/* ---- 7. FOOTER ---- */
+/* FOOTER */
 .site-footer{ background:var(--indigo-2); color:rgba(255,255,255,.65); padding:60px 0 0; }
 .footer-grid{
   display:grid; grid-template-columns:1.6fr 1fr; gap:36px; padding-bottom:44px;
@@ -261,7 +261,7 @@ blockquote.pull-quote{
 }
 .back-top svg{ width:13px; height:13px; stroke:currentColor; }
 
-/* ---- 8. LIGHTBOX (dipakai bila ada .gallery) ---- */
+/*  LIGHTBOX buat gallery */
 .lightbox{
   position:fixed; inset:0; background:rgba(15,12,9,.9); z-index:100;
   display:flex; align-items:center; justify-content:center; padding:24px;

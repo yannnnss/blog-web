@@ -1,4 +1,3 @@
-// Menambahkan bayangan pada header saat halaman digulir lebih dari 8 piksel.
 const header = document.getElementById('siteHeader');
 if (header){
   window.addEventListener('scroll', () => {
@@ -53,7 +52,6 @@ function copyLink(){
   });
 }
 
-// Mengisi gambar pada lightbox dan menampilkan lightbox.
 function openLightbox(src){
   const img = document.getElementById('lightboxImg');
   const box = document.getElementById('lightbox');
@@ -62,13 +60,11 @@ function openLightbox(src){
   box.classList.add('is-open');
 }
 
-// Menutup lightbox dengan menghapus kelas yang membuatnya terlihat.
 function closeLightbox(){
   const box = document.getElementById('lightbox');
   if (box) box.classList.remove('is-open');
 }
 
-// Menutup lightbox jika pengguna mengeklik area latar di luar gambar.
 const lightboxEl = document.getElementById('lightbox');
 if (lightboxEl){
   lightboxEl.addEventListener('click', (e) => {
