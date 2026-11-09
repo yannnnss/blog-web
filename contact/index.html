@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi tim Budaya Nusantara untuk berbagi cerita, memberi masukan, atau bekerja sama.">
+  <title>Hubungi Kami — Budaya Nusantara</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="wrap header-inner">
+      <a class="brand" href="../web/index.html">
+        <img class="brand-mark" src="../img/logoreog.png" alt="Logo Budaya Nusantara" width="34" height="34">
+        <span class="brand-name">Budaya Nusantara</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Navigasi utama">
+        <a href="../beranda/index.html">Beranda</a>
+        <a href="../kesenian/index.html">Kesenian</a>
+        <a href="../tradisi/index.html">Tradisi</a>
+        <a href="../pariwisata/index.html">Pariwisata</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="searchToggle" aria-label="Buka pencarian" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="search-panel" id="searchPanel">
+      <form onsubmit="return false;">
+        <input type="text" placeholder="Cari artikel budaya…" aria-label="Cari artikel">
+        <button type="submit">Cari</button>
+      </form>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" id="navMobile" aria-label="Navigasi mobile">
+    <a href="../beranda/index.html">Beranda</a>
+    <a href="../kesenian/index.html">Kesenian</a>
+    <a href="tradisi/index.html">Tradisi</a>
+    <a href="../pariwisata/index.html">Pariwisata</a>
+  </nav>
+
+  <main id="top">
+    <section class="contact-hero">
+      <span class="eyebrow">Kami senang mendengar ceritamu</span>
+      <h1>Mari terhubung</h1>
+      <p>Punya cerita budaya, pertanyaan, atau ide kolaborasi? Kirimkan pesan kepada tim Budaya Nusantara.</p>
+    </section>
+
+    <section class="contact-layout wrap" aria-label="Informasi dan formulir kontak">
+      <aside class="contact-aside">
+        <span class="section-kicker">Hubungi kami</span>
+        <h2>Setiap cerita punya tempat di sini.</h2>
+        <p>Kami terbuka untuk mendengar kisah budaya dari daerahmu, menerima masukan, dan menjajaki kerja sama.</p>
+
+        <div class="contact-details">
+          <a class="contact-detail" href="mailto:citrabarong@email.com">
+            <span class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </span>
+            <span><span class="detail-label">Email</span><strong>citrabarong@email.com</strong></span>
+          </a>
+          <div class="contact-detail">
+            <span class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </span>
+            <span><span class="detail-label">Lokasi</span><strong>Ponorogo, Jawa Timur</strong></span>
+          </div>
+        </div>
+      </aside>
+
+      <div class="contact-form-card">
+        <h2>Kirim pesan</h2>
+        <p class="form-intro">Isi formulir berikut. Aplikasi email akan terbuka untuk mengirim pesanmu.</p>
+        <form action="mailto:citrabarong@email.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <label for="contactName">Nama</label>
+            <input id="contactName" name="Nama" type="text" autocomplete="name" placeholder="Nama lengkap" required>
+          </div>
+          <div class="form-row">
+            <label for="contactEmail">Email</label>
+            <input id="contactEmail" name="Email" type="email" autocomplete="email" placeholder="nama@email.com" required>
+          </div>
+          <div class="form-row">
+            <label for="contactSubject">Topik</label>
+            <select id="contactSubject" name="Topik" required>
+              <option value="" disabled selected>Pilih topik pesan</option>
+              <option value="Berbagi cerita budaya">Berbagi cerita budaya</option>
+              <option value="Pertanyaan dan masukan">Pertanyaan dan masukan</option>
+              <option value="Kerja sama">Kerja sama</option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="contactMessage">Pesan</label>
+            <textarea id="contactMessage" name="Pesan" rows="5" placeholder="Ceritakan pesanmu di sini..." required></textarea>
+          </div>
+          <button class="contact-submit" type="submit">
+            Kirim pesan
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <span class="brand-name" style="color:#fff;">Nusantara Budaya</span>
+        <p>Portal referensi seni, tradisi, dan kuliner Indonesia ditulis untuk menjaga cerita budaya tetap hidup.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M14 4v9a3 3 0 1 1-3-3"/><path d="M14 4c0 2 2 4 4 4"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Tentang</h5>
+        <ul>
+          <li><a href="../aboutus/index.html">Tentang Kami</a></li>
+          <li><a href="../contact/index.html" aria-current="page">Hubungi Kami</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Nusantara Budaya.</span>
+      <a class="back-top" href="#top">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        Kembali ke atas
+      </a>
+    </div>
+  </footer>
+
+  <script src="../web/script.js"></script>
+</body>
+</html>
