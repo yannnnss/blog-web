@@ -5,15 +5,6 @@ if (header){
   });
 }
 
-const searchToggle = document.getElementById('searchToggle');
-const searchPanel  = document.getElementById('searchPanel');
-if (searchToggle && searchPanel){
-  searchToggle.addEventListener('click', () => {
-    const open = searchPanel.classList.toggle('is-open');
-    searchToggle.setAttribute('aria-expanded', open);
-  });
-}
-
 const navToggle = document.getElementById('navToggle');
 const navMobile  = document.getElementById('navMobile');
 if (navToggle && navMobile){
