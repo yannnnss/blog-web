@@ -22,25 +22,23 @@
       <a href="tradisi/index.html">Tradisi</a>
       <a href="pariwisata/index.html">Pariwisata</a>
     </nav>
-</header>
-      <button class="icon-btn nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
-    </div>
+    <button class="icon-btn nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMobile">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
   </div>
-  
-<nav class="nav-mobile" id="navMobile" aria-label="Navigasi mobile">
-  <a href="index.html" class="is-active" aria-current="page">Beranda</a>
-  <a href="kesenian/index.html">Kesenian</a>
-  <a href="tradisi/index.html">Tradisi</a>
-  <a href="pariwisata/index.html">Pariwisata</a>
-</nav>
+  <nav class="nav-mobile" id="navMobile" aria-label="Navigasi mobile">
+    <a href="beranda/index.html" class="is-active" aria-current="page">Beranda</a>
+    <a href="kesenian/index.html">Kesenian</a>
+    <a href="tradisi/index.html">Tradisi</a>
+    <a href="pariwisata/index.html">Pariwisata</a>
+  </nav>
+</header>
 
 <main id="top">
 
   <section class="hero wrap">
     <div class="hero-media">
-      <img src="img/images.jpg" alt="Pertunjukan seni Reog Ponorogo">
+      <img src="img/images.jpg" alt="Pertunjukan seni Reog Ponorogo" onclick="openLightbox(this.src)" style="cursor:zoom-in">
       <span class="hero-credit">Foto: Placeholder</span>
     </div>
   </section>
