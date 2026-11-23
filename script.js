@@ -28,18 +28,15 @@ function shareTo(platform){
   const title = encodeURIComponent(document.title);
 
   if (platform === 'instagram'){
-    // Instagram tidak punya URL share web — salin tautan, user tempel di Story/DM.
-    copyLink(); // sudah menampilkan toast "Tautan disalin!"
-    return;
-  }
+  copyLink();
+  window.open('https://www.instagram.com/reogsingomanggolo_/', '_blank', 'noopener');
+  return;
+}
+const links = {
+  twitter: `https://x.com/intent/post?text=${title}&url=${url}`,
+  whatsapp: `https://wa.me/?text=${title}%20${url}`
+};
 
-  const links = {
-    twitter:  `https://x.com/intent/post?text=${title}&url=${url}`,
-    whatsapp: `https://wa.me/?text=${title}%20${url}`
-  };
-  if (links[platform]){
-    window.open(links[platform], '_blank', 'noopener,width=600,height=500');
-  }
 }
 
 function copyLink(){
