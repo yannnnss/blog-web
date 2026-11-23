@@ -213,6 +213,20 @@ blockquote.pull-quote{
 .gallery img{ width:220px; height:150px; object-fit:cover; border-radius:var(--radius); }
 .gallery figcaption{ font-size:.78rem; color:var(--ink-soft); margin-top:8px; }
 
+/* MUSIK & VIDEO */
+.media-section{ margin:36px 0; }
+.media-section h2{ font-family:var(--font-serif); font-size:1.45rem; color:var(--indigo); margin:0 0 10px; }
+.media-section > p{ color:var(--ink-soft); font-size:.95rem; line-height:1.7; margin:0 0 18px; }
+.media-grid{ display:grid; gap:20px; }
+@media (min-width:640px){ .media-grid{ grid-template-columns:1fr 1fr; } }
+.media-item{ margin:0; }
+.media-item h3{ font-size:1rem; margin:0 0 8px; }
+.media-item p{ font-size:.9rem; color:var(--ink-soft); line-height:1.7; margin:0 0 10px; }
+.media-item audio{ width:100%; }
+.media-item figcaption{ font-size:.78rem; color:var(--ink-soft); margin-top:8px; }
+.video-wrap{ position:relative; padding-top:56.25%; border-radius:var(--radius); overflow:hidden; }
+.video-wrap iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+
 /* NEWSLETTER */
 .newsletter{ background:var(--indigo); color:#fff; padding:58px 0; }
 .newsletter-inner{ max-width:560px; margin:0 auto; text-align:center; padding:0 24px; }
