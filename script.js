@@ -27,9 +27,14 @@ function shareTo(platform){
   const url   = encodeURIComponent(window.location.href);
   const title = encodeURIComponent(document.title);
 
+  if (platform === 'instagram'){
+    // Instagram tidak punya URL share web — salin tautan, user tempel di Story/DM.
+    copyLink(); // sudah menampilkan toast "Tautan disalin!"
+    return;
+  }
+
   const links = {
-    instagram:`https://www.instagram.com/reogsingomanggolo_?stkn=aWphMTB5Mnl3cTFi=${url}`,
-    twitter:  `https://x.com/cahayabudaya_tat=${title}&url=${url}`,
+    twitter:  `https://x.com/intent/post?text=${title}&url=${url}`,
     whatsapp: `https://wa.me/?text=${title}%20${url}`
   };
   if (links[platform]){
