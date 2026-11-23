@@ -129,7 +129,7 @@ button{ font-family:inherit; cursor:pointer; }
 
 .article-card{
   background:var(--surface); box-shadow:var(--shadow); border-radius:var(--radius);
-  margin:-70px 35ccghhhhhhpx 0; position:relative; z-index:2;
+  margin:-70px 35px 0; position:relative; z-index:2;
   padding:34px 38px 30px;
 }
 .category-badge{
